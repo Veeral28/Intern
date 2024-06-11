@@ -17,23 +17,25 @@ namespace Hello
             while (low <= high) {
                 if (Arr[mid] < n) {
                     low = mid + 1;
-                    return mid;
+                    
                 }
                 else if (Arr[mid] > n)
                 {
                     high = mid - 1;
-                    return mid;
+                    
                 }
                 else
                 {
                     return mid;
                 }
-            
+
+                mid = low + (high - low) / 2;
+
             }
             return - 1;
 
         }
-        static void main(string[] args)
+        static void Main(string[] args)
         {
                 int[] Arr = {1,2,3,4,5,6,7};
 
