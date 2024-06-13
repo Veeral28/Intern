@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Hello.RadixSort</StartupObject>
+    <StartupObject>Hello.CountSort</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="binary.cs" />
     <Compile Include="BubbleSort1.cs" />
+    <Compile Include="CountSort.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="linear.cs" />
     <Compile Include="Program.cs" />
