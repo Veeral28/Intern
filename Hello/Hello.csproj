@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Hello.mergesort</StartupObject>
+    <StartupObject>Hello.Lists</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -46,11 +46,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Arraylists.cs" />
     <Compile Include="binary.cs" />
     <Compile Include="BubbleSort1.cs" />
     <Compile Include="CountSort.cs" />
     <Compile Include="InsertionSort.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="linear.cs" />
+    <Compile Include="Lists.cs" />
     <Compile Include="mergesort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
