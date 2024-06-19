@@ -1,0 +1,12 @@
+<?xml version ="1.0" encoding="utf-8"?>
+<root>
+	<profile>
+		<name>Mindows 10</name>
+	</profile>
+	<profile>
+		<name>Mindows 8</name>
+	</profile>
+	<profile>
+		<name>Mindows 7</name>
+	</profile>
+</root>	
