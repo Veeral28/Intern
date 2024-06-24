@@ -9,7 +9,10 @@ namespace Hello
 {
     internal class Arraylists
     {
+        public static void Main(string[] args)
+
         public void Main(string[] args)
+
         {
             System.Collections.ArrayList myList = new System.Collections.ArrayList();
             
@@ -19,7 +22,11 @@ namespace Hello
             myList.Add(true);
 
             Console.WriteLine(myList);
+
             myList.Count();
+
+            myList.Count();
+
             myList.Contains(true);
             myList.RemoveAt(0);
 

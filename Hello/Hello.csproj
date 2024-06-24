@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Hello.Lists</StartupObject>
+    <StartupObject>Hello.XMLRead</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -49,6 +49,7 @@
     <Compile Include="Arraylists.cs" />
     <Compile Include="binary.cs" />
     <Compile Include="BubbleSort1.cs" />
+    <Compile Include="XMLRead.cs" />
     <Compile Include="CountSort.cs" />
     <Compile Include="InsertionSort.cs" />
     <Compile Include="Interface1.cs" />
@@ -60,6 +61,7 @@
     <Compile Include="Quicksort.cs" />
     <Compile Include="RadixSort.cs" />
     <Compile Include="SelectionSort.cs" />
+    <Compile Include="stack123.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
