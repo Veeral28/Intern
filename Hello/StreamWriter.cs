@@ -8,5 +8,6 @@ namespace Hello
 {
     internal class StreamWriter
     {
+
     }
 }

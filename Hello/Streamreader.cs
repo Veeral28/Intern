@@ -16,16 +16,16 @@ namespace Hello
 
             int x;
             char ch;
-
             x = sr.Read();
+            string line = sr.ReadLine();
 
-            while (x != -1)
+            while (sr.Peek() != -1)
             {
                 ch = (char)x;
-                Console.WriteLine(ch);
-
+                line = sr.ReadLine();
 
                 x = sr.Read();
+                Console.WriteLine(ch);
             }
             sr.Close();
             Console.ReadLine();
