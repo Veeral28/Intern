@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Hello.Streamreader</StartupObject>
+    <StartupObject>Hello.Streamwrite</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,7 +50,7 @@
     <Compile Include="binary.cs" />
     <Compile Include="BubbleSort1.cs" />
     <Compile Include="Streamreader.cs" />
-    <Compile Include="StreamWriter.cs" />
+    <Compile Include="Streamwrite.cs" />
     <Compile Include="XMLRead.cs" />
     <Compile Include="CountSort.cs" />
     <Compile Include="InsertionSort.cs" />
