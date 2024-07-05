@@ -1,18 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Net.Http.Json;
-using System.Text.Json;
-using Newtonsoft.Json;
-using System.Text.Json.Serialization;
+using System.Xml.Serialization;
+
 
 namespace Hello
 {
-    internal class JSONserialize
+    public class XmlSerialization
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Product product = new Product
             {
@@ -21,25 +21,26 @@ namespace Hello
                 Natural = true,
                 price = 23.45M,
                 InventoryDate = DateTime.Now
-                
+
 
             };
-            //string json = JsonSerializer.Serialize(product, new JsonSerializerOptions{WriteIndented = true});
-            //for newtonsoft 
-            string json = JsonConvert.SerializeObject(product,Formatting.Indented);
-            Console.WriteLine(json);
+
+
+
+            XmlSerializer  xmlSerializer = new XmlSerializer(typeof(Product));
+            using StringWriter sw = new StringWriter();
+            xmlSerializer.Serialize(sw, product);
+            Console.WriteLine(sw.ToString());
             Console.ReadLine();
-            //Product newproduct = JsonSerializer.Deserialize<Product>(json);
-            //Console.WriteLine(newproduct);
-            Console.ReadLine() ;
+
         }
+
         public class Product
         {
             public int id { get; set; }
             public string name { get; set; }
             public bool Natural { get; set; }
             public decimal price { get; set; }
-            [JsonProperty("invdate")]
             public DateTime InventoryDate { get; set; }
         }
     }
