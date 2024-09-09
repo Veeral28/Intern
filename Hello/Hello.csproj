@@ -124,6 +124,7 @@
     <Compile Include="Arraylists.cs" />
     <Compile Include="binary.cs" />
     <Compile Include="BubbleSort1.cs" />
+    <Compile Include="formatters.cs" />
     <Compile Include="JSONserialize.cs" />
     <Compile Include="Queue.cs" />
     <Compile Include="Streamreader.cs" />
